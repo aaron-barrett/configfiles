@@ -1,2 +1,2 @@
 # Ignore scripts that might grab files from somewhere
-**/grab_files*
+**/grab*
