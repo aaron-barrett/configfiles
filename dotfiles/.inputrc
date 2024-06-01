@@ -1,0 +1,21 @@
+$include /etc/inputrc
+set convert-meta on
+set completion-ignore-case On
+# For the love of god turn the bell off 
+set bell-style none
+# Append "| vim -" to current line
+"\ev": "\C-e | vim -"
+# Prepend "vim" to the curente line
+"\ee": "\C-avim \C-e"
+# Prepent cd-ls alieas to line 
+Meta-c: "\C-ac \C-e"
+# Completion options
+Tab: menu-complete
+# Shift-tab cycles backwards
+"\e[Z": menu-complete-backward
+Meta-a: possible-completions
+# Kill whole line options
+Meta-k: kill-whole-line
+Meta-q: kill-whole-line
+# Insert quotes around text -> proof of concept
+Meta-y: '\C-a"\C-e"\C-e'
